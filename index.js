@@ -1,6 +1,8 @@
 // Imports
 
-const run = require('./lib/operations');
+const run = require('./lib/run');
+const list = require('./lib/list');
+const help = require('./lib/help');
 
 const args = process.argv.slice(2);
 const command = args[0];
@@ -10,8 +12,8 @@ const VALID_COMMANDS = [
   'help', // Displays supported commands
   'run', // Runs registered tasks
   'register', // Registers a new task
-  'list',
-  'revert',
+  'list', // Lists tasks from nearest .autom8r file
+  'undo',
   'last',
   'history'
 ];
@@ -29,25 +31,16 @@ switch (command) {
   case 'run':
     run(...args.slice(1));
     break;
-  case 'register':
-    register();
-    break;
   case 'list':
     list();
     break;
-
+  case 'register':
+    register();
+    break;
 }
 
-
-function help(){
-  console.log("Help");
-}
 
 function register(){
-  console.log("register");
-}
-
-function list(){
   console.log("register");
 }
 
