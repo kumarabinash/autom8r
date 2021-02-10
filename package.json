@@ -1,0 +1,35 @@
+{
+  "name": "autom8r",
+  "version": "1.0.0",
+  "description": "A package which helps you carry out tasks defined in a config file",
+  "keywords": [
+    "automate",
+    "replace file",
+    "replace",
+    "configure",
+    "rename file"
+  ],
+  "homepage": "https://github.com/kumarabinash/autom8r",
+  "bugs": {
+    "url": "https://github.com/kumarabinash/autom8r/issues",
+    "email": "abinash.b2+autom8rIssues@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumarabinash/autom8r.git"
+  },
+  "bin": {
+    "autom8r": "./cli.js"
+  },
+  "author": "Kumar Abinash <abinash.b2+autom8r@gmail.com> (kumarabinash.com)",
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "lodash": "^4.17.20"
+  }
+}
