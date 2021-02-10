@@ -27,7 +27,7 @@
   },
   "author": "Kumar Abinash <abinash.b2+autom8r@gmail.com> (kumarabinash.com)",
   "private": false,
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
     "lodash": "^4.17.20"
