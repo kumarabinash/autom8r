@@ -1,9 +1,10 @@
 // Imports
-const run = require('./lib/run');
+
+const run = require('./lib/operations');
 
 const args = process.argv.slice(2);
-
 const command = args[0];
+
 
 const VALID_COMMANDS = [
   'help', // Displays supported commands
@@ -26,7 +27,7 @@ switch (command) {
     help();
     break;
   case 'run':
-    run.run(...args.slice(1));
+    run(...args.slice(1));
     break;
   case 'register':
     register();
@@ -49,4 +50,5 @@ function register(){
 function list(){
   console.log("register");
 }
+
 
